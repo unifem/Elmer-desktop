@@ -109,9 +109,8 @@ if __name__ == "__main__":
 
    pwd = os.getcwd()
 
-   if pull:
+   if pull or not subprocess.check_output(['docker', 'images', '-q', user +"/" + image]):
        subprocess.call(["docker", "pull", user +"/" + image])
-       print('Updated Docker image. Run "docker system prune" to delete all unused old containers and images.')
 
    # Generate a container ID and find an unused port
    container = id_generator()
