@@ -2,7 +2,7 @@
 
 This Docker image is for learning and trying Elmer for solving numerical PDEs. 
 
-[![Build Status](https://travis-ci.org/MultiPhysicsLab/Elmer-desktop.svg?branch=master)](https://travis-ci.org/MultiPhysicsLab/Elmer-desktop) [![Docker Repository on Quay](https://quay.io/repository/multiphysics/elmer-desktop/status "Docker Repository on Quay")](https://quay.io/repository/multiphysics/elmer-desktop)
+[![Build Status](https://travis-ci.org/unifem/Elmer-desktop.svg?branch=master)](https://travis-ci.org/unifem/Elmer-desktop)  [![Docker Image](https://images.microbadger.com/badges/image/unifem/elmer-desktop.svg)](https://microbadger.com/images/unifem/elmer-desktop)
 
 ### About [Elmer](https://www.csc.fi/web/elmer)
 

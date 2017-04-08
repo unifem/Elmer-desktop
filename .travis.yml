@@ -3,5 +3,5 @@ services:
 
 script:
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_USERPASS"
-  - docker build --tag multiphysics/elmer-desktop . && docker push multiphysics/elmer-desktop
+  - docker build --tag unifem/elmer-desktop . && docker push unifem/elmer-desktop && curl -X POST https://registry.hub.docker.com/u/unifem/elmer-desktop/trigger/$DOCKER_TOKEN/
   - docker images

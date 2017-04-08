@@ -15,7 +15,7 @@ import sys
 # Process command-line arguments
 parser = argparse.ArgumentParser(description=__doc__)
 
-parser.add_argument('-u', "--user", nargs='?', help='''username used by the image. The default is multiphysics.''', default="multiphysics")
+parser.add_argument('-u', "--user", nargs='?', help='''username used by the image. The default is unifem.''', default="unifem")
 
 parser.add_argument('-i', '--image', nargs='?', help='''The Docker image to use. The default is elmer-desktop.''', default="elmer-desktop")
 
@@ -85,7 +85,7 @@ def wait_net_service(port, timeout=30):
             continue
         else:
             sock.close()
-            time.sleep(1)
+            time.sleep(0.5)
             return True
 
 def get_screen_resolution():
