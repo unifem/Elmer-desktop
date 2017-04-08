@@ -22,7 +22,7 @@ RUN apt-add-repository ppa:elmer-csc-ubuntu/elmer-csc-ppa && \
         elmerfem-csc && \
     curl -s https://cmake.org/files/v3.7/cmake-3.7.2-Linux-x86_64.tar.gz | \
           bsdtar zxf - -C /usr/local --strip-components 1 && \
-    echo "@ElmerGUI" >> .config/lxsession/LXDE/autostar && \         
+    echo "@ElmerGUI" >> $DOCKER_HOME/.config/lxsession/LXDE/autostar && \         
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ########################################################
